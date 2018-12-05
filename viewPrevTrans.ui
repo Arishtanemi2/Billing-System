@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1108</width>
+    <height>731</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>-10</y>
+     <width>1071</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back to Main</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableWidget" name="prevTransTable">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>61</y>
+     <width>1051</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>174</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>S No</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Invoice Number</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Time of Transaction</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Mobile Number</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Amount paid</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Mode of Payment</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
