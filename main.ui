@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1043</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainBilling</string>
+  </property>
+  <widget class="QPushButton" name="Print">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>610</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Finalize Payment and Print Invoice</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>520</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>520</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Entry</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>951</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>951</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
+   <property name="autoScrollMargin">
+    <number>16</number>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+   <property name="sortingEnabled">
+    <bool>true</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>152</number>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderMinimumSectionSize">
+    <number>30</number>
+   </attribute>
+   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <row>
+    <property name="text">
+     <string>R1</string>
+    </property>
+   </row>
+   <row>
+    <property name="text">
+     <string>R2</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>S No</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Product ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Product Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Quantity</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Price (per unit)</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Effective Price</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>0001</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>1102200151100</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>Ponds Powder</string>
+    </property>
+   </item>
+   <item row="0" column="3">
+    <property name="text">
+     <string>1</string>
+    </property>
+   </item>
+   <item row="0" column="4">
+    <property name="text">
+     <string>30</string>
+    </property>
+   </item>
+   <item row="0" column="5">
+    <property name="text">
+     <string>30</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>0002</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>1102200145242</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>Vicks Jumbo</string>
+    </property>
+   </item>
+   <item row="1" column="3">
+    <property name="text">
+     <string>2</string>
+    </property>
+   </item>
+   <item row="1" column="4">
+    <property name="text">
+     <string>15</string>
+    </property>
+   </item>
+   <item row="1" column="5">
+    <property name="text">
+     <string>30</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>450</y>
+     <width>931</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>New Entry</string>
+   </property>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>951</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>    (auto)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>681</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Product ID or Product Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>20</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quantity (default 1)</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>580</y>
+     <width>311</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mobile No</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>151</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>8801853078</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Invoice ID:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>AE7155424</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>100</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12-05-2018</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>580</y>
+     <width>301</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>100</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total Price</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>61.25</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>GST and Other Taxes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1.25</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>560</y>
+     <width>991</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>520</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Discard List</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>931</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Welcome,</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nani</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>0</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>12-05-2018, 18:22:48</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>1051</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Previous Transactions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>20</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Log out</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>View Profile</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>20</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Settings</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
