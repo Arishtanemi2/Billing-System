@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainBilling</string>
+   <string>Billing</string>
   </property>
   <widget class="QPushButton" name="finalizePaymentBtn">
    <property name="geometry">
