@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>MainBilling</string>
   </property>
-  <widget class="QPushButton" name="Print">
+  <widget class="QPushButton" name="finalizePaymentBtn">
    <property name="geometry">
     <rect>
      <x>380</x>
@@ -26,7 +26,7 @@
     <string>Finalize Payment and Print Invoice</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="clearBtn">
    <property name="geometry">
     <rect>
      <x>750</x>
@@ -39,7 +39,7 @@
     <string>Clear</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="addEntryBtn">
    <property name="geometry">
     <rect>
      <x>890</x>
@@ -52,7 +52,7 @@
     <string>Add Entry</string>
    </property>
   </widget>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QTableWidget" name="dataTable">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -241,7 +241,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="autoSerialText">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -254,7 +254,7 @@
      <string>    (auto)</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="prodIDNameText">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -267,7 +267,7 @@
      <string>Product ID or Product Name</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="prodQuantityText">
     <property name="geometry">
      <rect>
       <x>750</x>
@@ -309,7 +309,7 @@
      <string>Mobile No</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
+   <widget class="QLineEdit" name="mobileTextField">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -335,7 +335,7 @@
      <string>Invoice ID:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="invoiceLabel">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -361,7 +361,7 @@
      <string>Date:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="dateLabel">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -403,7 +403,7 @@
      <string>Total Price</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="totalLabel">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -434,7 +434,7 @@
      <string>GST and Other Taxes</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="gstValueLabel">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -466,7 +466,7 @@
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="discardListBtn">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -507,7 +507,7 @@
      <string>Welcome,</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="userNameLabel">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -520,7 +520,7 @@
      <string>Nani</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="dateTimeLabel">
     <property name="geometry">
      <rect>
       <x>780</x>
@@ -537,16 +537,16 @@
   <widget class="QGroupBox" name="groupBox_2">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>70</x>
      <y>-10</y>
-     <width>1051</width>
+     <width>891</width>
      <height>51</height>
     </rect>
    </property>
    <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="prevTransBtn">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -559,10 +559,10 @@
      <string>Previous Transactions</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_5">
+   <widget class="QPushButton" name="userLogOutBtn">
     <property name="geometry">
      <rect>
-      <x>960</x>
+      <x>810</x>
       <y>20</y>
       <width>81</width>
       <height>31</height>
@@ -572,7 +572,7 @@
      <string>Log out</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_6">
+   <widget class="QPushButton" name="userProfileBtn">
     <property name="geometry">
      <rect>
       <x>190</x>
@@ -585,10 +585,10 @@
      <string>View Profile</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_7">
+   <widget class="QPushButton" name="settingsBtn">
     <property name="geometry">
      <rect>
-      <x>860</x>
+      <x>710</x>
       <y>20</y>
       <width>91</width>
       <height>31</height>
