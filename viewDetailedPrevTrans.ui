@@ -25,7 +25,7 @@
    <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="backtomain">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -105,16 +105,6 @@
    <attribute name="verticalHeaderCascadingSectionResizes">
     <bool>true</bool>
    </attribute>
-   <row>
-    <property name="text">
-     <string>R1</string>
-    </property>
-   </row>
-   <row>
-    <property name="text">
-     <string>R2</string>
-    </property>
-   </row>
    <column>
     <property name="text">
      <string>S No</string>
@@ -145,66 +135,6 @@
      <string>Effective Price</string>
     </property>
    </column>
-   <item row="0" column="0">
-    <property name="text">
-     <string>0001</string>
-    </property>
-   </item>
-   <item row="0" column="1">
-    <property name="text">
-     <string>1102200151100</string>
-    </property>
-   </item>
-   <item row="0" column="2">
-    <property name="text">
-     <string>Ponds Powder</string>
-    </property>
-   </item>
-   <item row="0" column="3">
-    <property name="text">
-     <string>1</string>
-    </property>
-   </item>
-   <item row="0" column="4">
-    <property name="text">
-     <string>30</string>
-    </property>
-   </item>
-   <item row="0" column="5">
-    <property name="text">
-     <string>30</string>
-    </property>
-   </item>
-   <item row="1" column="0">
-    <property name="text">
-     <string>0002</string>
-    </property>
-   </item>
-   <item row="1" column="1">
-    <property name="text">
-     <string>1102200145242</string>
-    </property>
-   </item>
-   <item row="1" column="2">
-    <property name="text">
-     <string>Vicks Jumbo</string>
-    </property>
-   </item>
-   <item row="1" column="3">
-    <property name="text">
-     <string>2</string>
-    </property>
-   </item>
-   <item row="1" column="4">
-    <property name="text">
-     <string>15</string>
-    </property>
-   </item>
-   <item row="1" column="5">
-    <property name="text">
-     <string>30</string>
-    </property>
-   </item>
   </widget>
  </widget>
  <resources/>

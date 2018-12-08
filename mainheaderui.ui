@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="billing">
     <property name="geometry">
      <rect>
       <x>390</x>
@@ -34,7 +34,7 @@
      <string>Billing</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="inventory">
     <property name="geometry">
      <rect>
       <x>110</x>
@@ -52,7 +52,7 @@
      <string>Inventory</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="lol">
     <property name="geometry">
      <rect>
       <x>670</x>
@@ -62,7 +62,7 @@
      </rect>
     </property>
     <property name="text">
-     <string> </string>
+     <string/>
     </property>
    </widget>
   </widget>

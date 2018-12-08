@@ -1,0 +1,83 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(1115, 746)
+        self.groupBox = QtWidgets.QGroupBox(Dialog)
+        self.groupBox.setGeometry(QtCore.QRect(20, -10, 1071, 61))
+        self.groupBox.setTitle("")
+        self.groupBox.setObjectName("groupBox")
+        self.backtomain = QtWidgets.QPushButton(self.groupBox)
+        self.backtomain.setGeometry(QtCore.QRect(0, 20, 141, 41))
+        self.backtomain.setObjectName("backtomain")
+        self.backtomain.clicked.connect(self.backmain)
+        self.dataTable = QtWidgets.QTableWidget(Dialog)
+        self.dataTable.setGeometry(QtCore.QRect(50, 70, 1031, 591))
+        self.dataTable.setMinimumSize(QtCore.QSize(951, 0))
+        self.dataTable.setLineWidth(1)
+        self.dataTable.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
+        self.dataTable.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.dataTable.setAutoScrollMargin(16)
+        self.dataTable.setAlternatingRowColors(True)
+        self.dataTable.setShowGrid(True)
+        self.dataTable.setWordWrap(True)
+        self.dataTable.setObjectName("dataTable")
+        self.dataTable.setColumnCount(6)
+        self.dataTable.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.dataTable.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.dataTable.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.dataTable.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.dataTable.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.dataTable.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.dataTable.setHorizontalHeaderItem(5, item)
+        self.dataTable.horizontalHeader().setVisible(True)
+        self.dataTable.horizontalHeader().setCascadingSectionResizes(True)
+        self.dataTable.horizontalHeader().setDefaultSectionSize(152)
+        self.dataTable.horizontalHeader().setHighlightSections(True)
+        self.dataTable.horizontalHeader().setMinimumSectionSize(30)
+        self.dataTable.horizontalHeader().setSortIndicatorShown(False)
+        self.dataTable.horizontalHeader().setStretchLastSection(True)
+        self.dataTable.verticalHeader().setVisible(False)
+        self.dataTable.verticalHeader().setCascadingSectionResizes(True)
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        self.backtomain.setText(_translate("Dialog", "Back to Main"))
+        self.dataTable.setSortingEnabled(True)
+        item = self.dataTable.horizontalHeaderItem(0)
+        item.setText(_translate("Dialog", "S No"))
+        item = self.dataTable.horizontalHeaderItem(1)
+        item.setText(_translate("Dialog", "Product ID"))
+        item = self.dataTable.horizontalHeaderItem(2)
+        item.setText(_translate("Dialog", "Product Name"))
+        item = self.dataTable.horizontalHeaderItem(3)
+        item.setText(_translate("Dialog", "Quantity"))
+        item = self.dataTable.horizontalHeaderItem(4)
+        item.setText(_translate("Dialog", "Price (per unit)"))
+        item = self.dataTable.horizontalHeaderItem(5)
+        item.setText(_translate("Dialog", "Effective Price"))
+
+    def backmain(self):
+        print("Clicked back")
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Dialog = QtWidgets.QDialog()
+    ui = Ui_Dialog()
+    ui.setupUi(Dialog)
+    Dialog.show()
+    sys.exit(app.exec_())
+

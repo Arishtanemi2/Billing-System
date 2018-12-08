@@ -25,7 +25,7 @@
    <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="backbtnmain">
     <property name="geometry">
      <rect>
       <x>0</x>
