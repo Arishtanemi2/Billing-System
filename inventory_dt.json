@@ -1,0 +1,10 @@
+[
+{"type":"header","version":"4.8.3","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"billing_dt"},
+{"type":"table","name":"inventory_dt","database":"billing_dt","data":
+[
+{"Serial":"1","ProductID":"1624ASDF","Product_Name":"Soundarya Sabun Nirma","Quantity":"5","PPU":"20"},
+{"Serial":"2","ProductID":"1724AFGH","Product_Name":"Parle G","Quantity":"3","PPU":"10"}
+]
+}
+]
